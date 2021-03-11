@@ -7,6 +7,7 @@ function loadWebsite() {
     let temperatureDegree = document.querySelector('.temperature-degree');
     let locationTimezone = document.querySelector('.location-timezone');
     let weatherImage = document.querySelector('#weatherImage');
+    let unit = document.querySelector('span');
 
     var cityName = document.querySelector("#cityName").value;
     cityName = cityName.toLowerCase();
@@ -36,6 +37,7 @@ function loadWebsite() {
             const weatherImageURL = `http://openweathermap.org/img/w/${icon}.png`;
 
             temperatureDegree.textContent = temperature.toFixed(2);
+            unit.textContent = "C";
             temperatureDescription.textContent = summary;
             locationTimezone.textContent = `${city}, ${country}`;
             weatherImage.src = weatherImageURL;

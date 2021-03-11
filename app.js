@@ -12,11 +12,11 @@ function loadWebsite() {
     cityName = cityName.toLowerCase();
 
 
-    // first a jokhon kichu thakbe na dhaka load hobe
+    // first time dhaka will be loaded
     if (cityName.length == 0) {
         cityName = 'dhaka';
     }
-    // console.log(cityName.length + "main");
+
 
 
     const api = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=b9810e52e576d66ababa1848cc65b8e5`;
@@ -43,10 +43,6 @@ function loadWebsite() {
 
 }
 
-
-
-
-//ok
 
 
 const convertFarenheit = () => {
@@ -79,6 +75,5 @@ const searchEngine = () => {
     var city = document.querySelector("#cityName").value;
     cityName = city;
     loadWebsite();
-    // console.log(cityName + "SE");
 }
 

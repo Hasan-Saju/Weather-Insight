@@ -56,11 +56,15 @@ body
     font-family: sans-serif;
     padding: 10;
     font-size: 20;
-    
+    /* background: transparent; */
+    border: none;    
 }
+
 #submitButton
 {
     height: 40;
     width: 100; 
     font-size: 20;
+    /* background: transparent; */
+    border: none;
 }

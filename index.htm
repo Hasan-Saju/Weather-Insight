@@ -10,6 +10,10 @@
 
 <body>
 
+    <div class="search">
+        <input id="cityName" type="text" placeholder="Enter city name.."><input onclick="searchEngine()"
+            id="submitButton" type="button" value="Submit">
+    </div>
     <div class="location">
         <h1 class="location-timezone">Timezone</h1>
         <img id='weatherImage' height="60" width="60" src="#" alt="">
@@ -17,11 +21,11 @@
     </div>
     <div class="temperature">
         <div class="degree-section">
-            <h2 class="temperature-degree" onclick="convertFarenheit()">34</h2>
+            <h2 class="temperature-degree" onclick="convertFarenheit()">00</h2>
             <span>C</span>
         </div>
 
-        <div class="temperature-description">It's very cold here.</div>
+        <div class="temperature-description">Weather Description</div>
     </div>
     <script src="app.js"></script>
 </body>

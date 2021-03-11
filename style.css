@@ -47,3 +47,20 @@ body
 {
     font-size: 40px;
 }
+
+#cityName
+{
+    height: 40;
+    width: 1100;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 10;
+    font-size: 20;
+    
+}
+#submitButton
+{
+    height: 40;
+    width: 100; 
+    font-size: 20;
+}

@@ -7,12 +7,15 @@ window.addEventListener('load', () => {
             // console.log(position)
             long = position.coords.longitude;
             lat = position.coords.latitude;
-            const api = `api.openweathermap.org/data/2.5/weather?q=dhaka&appid=b9810e52e576d66ababa1848cc65b8e5`;
+            console.log(long);
+            const proxy = 'https://cors-anywhere.herokuapp.com/';
+            const api = `https://api.openweathermap.org/data/2.5/weather?q=dhaka&appid=b9810e52e576d66ababa1848cc65b8e5`;
+
             fetch(api)
                 .then(response => response.json())
                 .then(data => {
                     console.log(data);
-                })
+                });
         });
 
 

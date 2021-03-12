@@ -11,9 +11,17 @@ body
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(rgb(47,150,163),rgb(48,62,143));
     font-family: sans-serif;
     color: white;
+}
+
+.design-change
+{
+background: linear-gradient(rgb(47,150,163),rgb(48,62,143));
+}
+.design-change2
+{
+    background: linear-gradient(#FBD72B,#F9484A);
 }
 
 .location,.temperature

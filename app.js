@@ -8,6 +8,9 @@ function loadWebsite() {
     let locationTimezone = document.querySelector('.location-timezone');
     let weatherImage = document.querySelector('#weatherImage');
     let unit = document.querySelector('span');
+    let body = document.querySelector('body');
+
+    let bg = ['design-change', 'design-change2'];
 
     var cityName = document.querySelector("#cityName").value;
     cityName = cityName.toLowerCase();
@@ -41,6 +44,11 @@ function loadWebsite() {
             temperatureDescription.textContent = summary;
             locationTimezone.textContent = `${city}, ${country}`;
             weatherImage.src = weatherImageURL;
+
+            body.classList.remove(bg[0]);
+            body.classList.remove(bg[1]);
+            body.classList.add(bg[theme]);
+
         });
 
 }
@@ -76,6 +84,10 @@ const convertFarenheit = () => {
 const searchEngine = () => {
     var city = document.querySelector("#cityName").value;
     cityName = city;
-    loadWebsite();
+    loadWebsite(theme);
+
+    theme++;
+    theme %= 2;
 }
 
+var theme = 0;
